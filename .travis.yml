@@ -6,6 +6,7 @@ before_install:
 script:
   - docker run -e CI=true react-app npm run test
 language: generic
+edge: true
 deploy:
   provider: "elasticbeanstalk"
   region: "ap-southeast-1"
